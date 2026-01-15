@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boston 311 Top 10 Requests</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" href="chart.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Boston Top 10 Most Frequent 311 Requests (2025)</h1>
+        <h2 class="subheading">Top requests: Enforcement & Abandoned Vehicles (65,349) and Street Cleaning (48,702)</h2>
+        <div id="chart"></div>
+        <div class="footer">
+            <p class="citation"><strong>Data Source:</strong> Boston 311 Service Requests (2025)</p>
+            <p class="authorship"><strong>Visualization by:</strong> Chris and Jack with the Help of Claude Haiku 4.5</p>
+        </div>
+        <button id="toggle-btn" class="toggle-button">Show All Request Types</button>
+    </div>
+
+    <div class="container" id="extended-container" style="display: none;">
+        <h1>Remaining 311 Request Types</h1>
+        <div id="chart-extended"></div>
+        <button id="close-btn" class="toggle-button">Hide Extended Chart</button>
+    </div>
+    <script src="chart.js"></script>
+</body>
+</html>
